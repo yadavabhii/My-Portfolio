@@ -57,6 +57,7 @@ h3 {
 }
 
 nav {
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,6 +126,9 @@ nav ul li a:hover::after {
 
 .header-section {
     display: flex;
+    padding: 2%;
+    margin-top: 4%;
+    
 }
 
 .header-text {
@@ -231,6 +235,16 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
+/* .text-name{
+    animation-name: slideright;
+    animation-duration: 1s;
+    animation-timing-function: ease forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 1s;
+    transition: background-color 0.5s ease;
+} */
+
 /************* About ***************/
 
 .About {
@@ -316,6 +330,58 @@ nav ul li a:hover::after {
     display: block;
 }
 
+/******************* Skills *********************/
+
+.sub-title-service {
+    /* text-decoration: underline; */
+    margin-right: 8%;
+    margin-bottom: 8%;
+}
+
+.skill-col ul li {
+    margin: 10px 0;
+    list-style: none;
+    padding: 8px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.skill-col h2 {
+    text-align: center;
+}
+
+.heading12 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.container1 {
+    margin: auto;
+    /* width: 600px; */
+    /* height: 800px; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    padding: 75px 90px;
+    /* justify-content: space-around; */
+}
+
+.radial-text {
+    margin: 0 30%;
+    font-size: 20px;
+}
+
+.sub-title-service {
+    text-align: center;
+}
+
+.html-logo span img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    mix-blend-mode: darken;
+}
 
 
 /************* services ***************/
@@ -435,6 +501,7 @@ nav ul li a:hover::after {
 
 .contact-form input {
     background-color: transparent;
+    color: white;
     padding: 10px;
     border: none;
     border: 1px solid #ccc;
@@ -456,6 +523,7 @@ input::placeholder {
 
 .contact-form textarea {
     background-color: transparent;
+    color: white;
     width: 100%;
     padding: 10px;
     /* border: none; */
@@ -733,6 +801,18 @@ input::placeholder {
 
     to {
         transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright {
+    from {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(100px);
         opacity: 1;
     }
 }

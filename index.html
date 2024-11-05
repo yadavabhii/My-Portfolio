@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./abhi-favicon.svg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
 </head>
 
 <body>
@@ -15,7 +18,7 @@
             <nav>
                 <a href="#"><img src="./abhilogo.png" class="logo" alt="Logo"></a>
                 <ul>
-                    <li><a href="#home" style="color: #0ef;">Home</a></li>
+                    <li><a href="#header-section" style="color: #0ef;">Home</a></li>
                     <li><a href="#about-me">About</a></li>
                     <!-- <li><a href="../navbarport/about.html">About</a></li> -->
                     <li><a href="#services">Services</a></li>
@@ -25,7 +28,7 @@
                 </ul>
                 <i class="ri-menu-fill"></i>
             </nav>
-            <div class="header-section">
+            <div class="header-section" id="header-section">
                 <div class="header-text">
                     <h3>Hello, it's me </h3> <br>
                     <h1>Abhii! Yadav</span> </h1> <br>
@@ -102,6 +105,70 @@
             </div>
         </div>
     </div>
+
+    <!--------------------- Skills  ----------------------->
+
+
+    <div class="skills" id="skills">
+        <div class="container">
+            <h1 class="sub-title-service">My <span style="color: #0ef;">Skills</span></h1>
+            <div class="skill-col-row">
+                <div class="skill-col">
+                    <h2 style="text-decoration: underline;">Technical Skills</h2>
+                    <ul>
+                        <li><i style="color: #c95d2e;" class="ri-html5-line"></i> HTML</li>
+                        <li><i style="color: #147bbc;" class="ri-css3-fill"></i> CSS</li>
+                        <li><i style="color: #b0bc1e;" class="ri-javascript-line"></i> JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container1">
+        <h2 class="heading12">Professional Skills</h2>
+        <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 100">
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+            </svg>
+            <div class="radial-text">
+                <div class="parcentage">90%</div>
+                <div class="text">Creativity</div>
+            </div>
+        </div>
+        <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 100">
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+            </svg>
+            <div class="radial-text">
+                <div class="parcentage">75%</div>
+                <div class="text">Communication</div>
+            </div>
+        </div>
+        <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 100">
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+            </svg>
+            <div class="radial-text">
+                <div class="parcentage">80%</div>
+                <div class="text">Problem solving</div>
+            </div>
+        </div>
+        <div class="radial-bars">
+            <svg x="0px" y="0px" viewBox="0 0 200 100">
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+                <circle class="bar" cx="100" cy="50" r="30"></circle>
+            </svg>
+            <div class="radial-text">
+                <div class="parcentage">85%</div>
+                <div class="text">Team work</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
 
 
     <!------------------- Services------------------>
@@ -217,6 +284,7 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
