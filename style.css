@@ -9,6 +9,7 @@
 body {
     background: #1f242d;
     color: var(--primary-color);
+    /* padding: 2vw; */
 }
 
 p {
@@ -71,6 +72,7 @@ nav {
 
 nav a img {
     width: 60px;
+    margin-left: 20px;
     opacity: 0;
     animation-name: slideRight;
     animation: slideRight 1s ease forwards;
@@ -128,7 +130,7 @@ nav ul li a:hover::after {
     display: flex;
     padding: 2%;
     margin-top: 4%;
-    
+
 }
 
 .header-text {
@@ -331,7 +333,7 @@ nav ul li a:hover::after {
 }
 
 /******************* Skills *********************/
-section{
+section {
     display: flex;
     flex-wrap: wrap;
 }
@@ -345,22 +347,16 @@ section{
 
 .skills {
     width: 600px;
-    height: 500px;
+    height: 400px;
     /* padding: 75px 90px; */
     margin-left: 120px;
 }
 
-.heading-tech{
+.heading-tech {
     text-align: center;
     text-underline-offset: 10px;
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
-}
-
-
-.radial-text {
-    margin: 0 30%;
-    font-size: 20px;
 }
 
 .sub-title-service {
@@ -369,16 +365,22 @@ section{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
 }
-.bar{
+
+.bar {
     font-size: 23px;
     margin-top: 20px;
     margin-left: 160px;
 }
-.skill-col .bar{
-    margin-top: 40px 0;
-}
-.radial-bars{
 
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.radial-bars {
+    margin-top: 20px;
+    font-size: 22px;
 }
 
 
@@ -696,6 +698,18 @@ input::placeholder {
         width: 100%;
     }
 
+    .container1 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .heading12 {
+        text-align: center;
+    }
+
     /*************************** here end media query for contact section ***********************/
 }
 
@@ -784,6 +798,20 @@ input::placeholder {
         margin-top: 0;
     }
 
+    .skills {
+        margin: auto 0;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .container1 {
+        margin: auto;
+    }
+
+    .skills {
+        /* margin: 0; */
+    }
 
 }
 
